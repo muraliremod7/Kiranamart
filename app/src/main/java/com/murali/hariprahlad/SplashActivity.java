@@ -17,7 +17,7 @@ public class SplashActivity extends AppCompatActivity {
     {
         public void handleMessage(Message msg)
         {
-            Intent i = new Intent(SplashActivity.this, HomeActivity.class);
+            Intent i = new Intent(SplashActivity.this, MainActivity.class);
             SplashActivity.this.startActivity(i);
             SplashActivity.this.finish();
         }

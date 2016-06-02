@@ -126,7 +126,7 @@ public class LoginActivity extends AppCompatActivity {
                                     editor.putString("teamid", registerationId);
                                     editor.commit();
                                     Toast.makeText(LoginActivity.this,"Login Successfull",Toast.LENGTH_LONG).show();
-                                    Intent i = new Intent(LoginActivity.this, HomeActivity.class);
+                                    Intent i = new Intent(LoginActivity.this, MainActivity.class);
                                     i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                     // Add new Flag to start new Activity
                                     i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

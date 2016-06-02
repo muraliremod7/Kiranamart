@@ -4,6 +4,13 @@
     <string name="register"><b>Not Yet Register? <u>Click To Register</u></b></string>
     <string name="login"><b><u>Click To Login</u></b></string>
 
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
     <string-array name="Area">
 
         <item>Select Your Location</item>
@@ -109,4 +116,12 @@
         <item>Telengana</item>
         <item>Andhra Pradesh</item>
     </string-array>
+    <string-array name="nav_drawer_labels">
+    <item>Home</item>
+    <item>Categories</item>
+    <item>Wallet</item>
+    <item>WB Specials</item>
+        <item>My Orders</item>
+        <item>SignOut</item>
+</string-array>
 </resources>
