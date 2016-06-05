@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
     SharedPreferences.Editor editor;
     ConnectionDetector connection;
     AlertDialogManager alert = new AlertDialogManager();
-    public static String registerationId;
+    public static String registerationId,sskey;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -121,9 +121,11 @@ public class LoginActivity extends AppCompatActivity {
                                     session.createLoginSession(Phone,Pin);
                                     JSONObject object = j.getJSONObject("user");
                                     registerationId = object.getString("id");
+                                    sskey = j.getString("sscode");
                                     SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
                                     editor = settings.edit();
                                     editor.putString("teamid", registerationId);
+                                    editor.putString("sskey",sskey);
                                     editor.commit();
                                     Toast.makeText(LoginActivity.this,"Login Successfull",Toast.LENGTH_LONG).show();
                                     Intent i = new Intent(LoginActivity.this, MainActivity.class);

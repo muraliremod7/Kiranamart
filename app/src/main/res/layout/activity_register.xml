@@ -5,10 +5,70 @@
     android:layout_height="wrap_content"
     android:background="@drawable/background"
     tools:context="com.murali.hariprahlad.LoginActivity">
+
 <RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="900dp">
+    android:layout_height="900dp"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pingeneratelayout"
+        android:background="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone">
 
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/closelayout"
+                android:layout_marginLeft="21dp"
+                android:src="@drawable/ic_keyboard_backspace_white_24dp"
+                android:layout_marginStart="21dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp"
+                android:hint="Enter 4 digit Pin"
+                android:ems="10"
+                android:background="@drawable/edittextstyle"
+                android:id="@+id/newpinnumber"
+                android:layout_alignTop="@+id/closeForgot"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Submit"
+                android:onClick="createpinNumber"
+                android:background="@drawable/button_bg"
+                android:id="@+id/neweventcreate"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="900dp"
@@ -16,7 +76,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:id="@+id/registerlayout">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -30,8 +91,9 @@
                 android:layout_height="fill_parent"
                 android:id="@+id/imageView"
                 android:src="@drawable/walletbabalogoo"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true" />
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
         </RelativeLayout>
 <RelativeLayout
     android:layout_width="match_parent"
@@ -83,6 +145,21 @@
             android:id="@+id/registerphone"
             android:layout_below="@+id/registername"
             android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:hint="Enter Alternative Phone Number"
+        android:textColorHint="@color/colorAccent"
+        android:background="@drawable/edittextstyle"
+        android:id="@+id/registeralternatephone"
+        android:layout_below="@+id/registerphone"
+        android:layout_alignLeft="@+id/registerphone"
+        android:layout_alignStart="@+id/registerphone"
+        android:layout_alignRight="@+id/registerphone"
+        android:layout_alignEnd="@+id/registerphone" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -91,11 +168,11 @@
             android:text="GENDER"
             android:textStyle="bold"
             android:textColor="@color/textcolor"
-            android:layout_marginTop="15dp"
             android:id="@+id/textView2"
-            android:layout_below="@+id/registerphone"
-            android:layout_alignLeft="@+id/registerphone"
-            android:layout_alignStart="@+id/registerphone" />
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/registeralternatephone"
+            android:layout_alignLeft="@+id/registeremail"
+            android:layout_alignStart="@+id/registeremail" />
 
         <RadioGroup
             android:id="@+id/radioSex"
@@ -161,7 +238,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/registerlocation"
             android:layout_marginLeft="10dp"
-            android:entries="@array/Area"
             android:spinnerMode="dialog"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
@@ -175,7 +251,7 @@
             android:inputType="textMultiLine"
             android:ems="10"
             android:layout_marginTop="10dp"
-            android:hint="Enter Landmark"
+            android:hint="Enter City"
             android:textColorHint="@color/colorAccent"
             android:background="@drawable/edittextstyle"
             android:layout_marginLeft="10dp"
@@ -263,7 +339,8 @@
             android:layout_alignBottom="@+id/radioMale"
             android:layout_toRightOf="@+id/radioMale"
             android:layout_toEndOf="@+id/radioMale" />
-    </RelativeLayout>
+
+</RelativeLayout>
 </RelativeLayout>
 </RelativeLayout>
 </ScrollView>

@@ -8,8 +8,10 @@
     <string name="action_search">Search</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
-    <string name="title_messages">Messages</string>
-    <string name="title_friends">Friends</string>
+    <string name="title_wallet">Wallet</string>
+    <string name="title_wbspecials">WB Specials</string>
+    <string name="title_myoredrs">My Orders</string>
+    <string name="title_categories">Categories</string>
     <string name="title_home">Home</string>
     <string-array name="Area">
 
@@ -114,14 +116,24 @@
     </string-array>
     <string-array name="Locations">
         <item>Telengana</item>
-        <item>Andhra Pradesh</item>
+        <item>AndhraPradesh</item>
     </string-array>
     <string-array name="nav_drawer_labels">
-    <item>Home</item>
-    <item>Categories</item>
-    <item>Wallet</item>
-    <item>WB Specials</item>
+        <item>Home</item>
+        <item>Categories</item>
         <item>My Orders</item>
+        <item>WB Specials</item>
+        <item>Wallet</item>
         <item>SignOut</item>
-</string-array>
+    </string-array>
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_profile</item>
+        <item>@drawable/ic_profile</item>
+        <item>@drawable/ic_profile</item>
+        <item>@drawable/ic_profile</item>
+        <item>@drawable/ic_account_balance_wallet_black_24dp</item>
+        <item>@drawable/ic_profile</item>
+    </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

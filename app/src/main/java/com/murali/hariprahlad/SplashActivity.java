@@ -44,7 +44,7 @@ public class SplashActivity extends AppCompatActivity {
         }
     }
     private void addShortcut() {
-        //Adding shortcut for MainActivity
+        //Adding shortcut for com.murali.hariprahlad.MainActivity
         //on Home screen
         Intent shortcutIntent = new Intent(getApplicationContext(), SplashActivity.class);
 
