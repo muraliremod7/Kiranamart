@@ -23,7 +23,7 @@ public class SessionManager {
 	public static int PRIVATE_MODE = 0;
 	
 	// Sharedpref file name
-	private static final String PREF_NAME = "GBI Connect";
+	private static final String PREF_NAME = "Walletbaba";
 	
 	// All Shared Preferences Keys
 	private static final String IS_LOGIN = "IsLoggedIn";

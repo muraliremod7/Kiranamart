@@ -1,5 +1,6 @@
 package com.murali.hariprahlad;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Handler;
@@ -12,8 +13,8 @@ import com.murali.hariprahlad.walletbaba.R;
 
 import services.SessionManager;
 
-public class SplashActivity extends AppCompatActivity {
-    private Handler handler = new Handler()
+public class SplashActivity extends Activity {
+    private Handler handler =  new Handler()
     {
         public void handleMessage(Message msg)
         {
@@ -26,7 +27,6 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-            addShortcut();
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         if(!prefs.getBoolean("first_time", false))
         {
